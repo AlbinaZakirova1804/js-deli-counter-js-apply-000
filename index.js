@@ -1,12 +1,18 @@
-//1. add newCustomer
+//1. add newCustomer to the line
 
-function takeANumber(katzDeli, newCustomer )
+var number = 1
+function takeANumber(katzDeli )
 {
-  katzDeli.push(newCustomer);// add new customer to the array
-  return("Welcome, "+ newCustomer + ". You are number " + katzDeli.length + " in line.");
-}
+ 
+ katzDeli.length
+  katzDeli.push(number)
+  number++
+  //katzDeli.push(newCustomer);// add new customer to the end of array
+  return "Welcome, your ticket number is" + katzDeli.length;  //  + newCustomer + ". You are number " + katzDeli.length + " in line.");
+ }
 
-//2. return first person in a line and then remove him from the line
+//2. return first person and then remove him from the line
+
 function nowServing(katzDeliLine)
 {
   if (katzDeliLine.length === 0)
@@ -15,8 +21,8 @@ function nowServing(katzDeliLine)
   }
   else 
   {
-    var Customer = katzDeliLine.shift(); // remove first customer from array
-    return ('Currently serving ' + Customer +'.');//return just removed customer
+    var Customer = katzDeliLine.shift(); // remove first customer from array 
+    return 'Currently serving ' + Customer +'.';//return just removed customer
   }
 }
 
